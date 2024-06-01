@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <section class="todo">
+    <div class="todo__block">
+      <h1 class="todo__title">TodoList</h1>
+      <form class="todo__form">
+        <input class="todo__field" type="text" placeholder="Add task"  required>
+          <button class="todo__add" type="submit">Add</button>
+          <p class="todo__error" hidden>Такая задача уже существует</p>
+        </input>   
+     </form>
+        <ul class="todo__list">
+          <!-- <li class="todo__item">
+            <p class="todo__item-text">Купить книгу</p>
+            <span class="todo__itemdel">X</span>
+          </li> -->
+        </ul> 
+      <div class="todo__bot">
+        <div class="todo__lvl">
+          <div class = "progress-bar"></div>
+          <span class="todo__lvl-done">1</span> of <span class="todo__lvl-all"></span> task done
+        </div>
+        <button class="todo__del-all">Remove checked</button>
+      </div>
+    </div>
+  </section>
+  <script src="app.js"></script> 
+</body>
+</html>
